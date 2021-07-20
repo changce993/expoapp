@@ -3,7 +3,7 @@ import { TouchableHighlight } from 'react-native';
 import { colors, rounded } from '../../../theme';
 import Text from '../Text';
 
-const index = ({ onPress, children }) => {
+const index = ({ onPress, marginVertical, children }) => {
 
   const styles = {
     display: "flex",
@@ -11,7 +11,8 @@ const index = ({ onPress, children }) => {
     justifyContent: "center",
     height: 48,
     backgroundColor: colors.primary,
-    borderRadius: rounded.sm
+    borderRadius: rounded.sm,
+    marginVertical: marginVertical || 0
   };
 
   return (
